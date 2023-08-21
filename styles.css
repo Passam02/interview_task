@@ -1,0 +1,23 @@
+.btn-kontakt{
+    background-color: #1B5B31;
+    color: white;
+    border-radius: 20px;
+}
+.btn-realizacje{
+    color: #1B5B31;
+    border-radius: 20px;
+    border: #1B5B31 1px solid;
+}
+.btn-slider-next{
+    height: 13%;
+    width: 7%;
+    bottom: 0;
+    top: auto !important;
+}
+.btn-slider-prev{
+    width: 7%;
+    height: 13%;
+    right: 7%;
+    left: auto;
+    top: auto;
+}

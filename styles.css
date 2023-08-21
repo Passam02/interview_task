@@ -37,15 +37,18 @@
 .oferta-kafelek{
     background-color: white;
     border-radius: 25px;
+    margin-bottom: 3rem;
 }
 .oferta-box-kafelek{
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 15%;
 }
-.col-4{
+@media (min-width: 992px) {
+    .col-lg-4{
     width: 30%;
-}
+}}
+
 .ofirmie{
     color: rgba(255, 255, 255, 0.952);
     margin-left: 17%;

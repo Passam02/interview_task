@@ -1,2 +1,2 @@
 # interview_task
-Interview task for which i had to recreate alrleady existing web app
+Interview task to adRespect for which i had to recreate alrleady existing web page

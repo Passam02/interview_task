@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar border-bottom border-body p-3">
         <h4 style="margin-left: 5%;"><b>giard</b>design</h2>
-        <div class="d-flex align-items-center" style="margin-right: 5%;">
+        <div class="d-flex align-items-center navbar-options flex-column" style="margin-right: 5%;">
             <div class="dropdown px-3">
                 <button class="btn fs-6 fw-medium dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Oferta
@@ -25,10 +25,13 @@
             <h6 class="p-2 px-4 m-0">O Firmie</h5>
             <h6 class="p-2 px-4 m-0">Realizacje</h5>
             <h6 class="p-2 px-4 m-0">Kontakt</h5>
-            <div class="px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></label>
+                </form>
             </div>
         </div>
     </nav>

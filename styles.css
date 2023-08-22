@@ -375,6 +375,7 @@
     border-color: black;
     position: absolute;
     bottom: 180px;
+    left: 45%;
   }
   .gallery-btn-box {
     text-align: center;
@@ -385,4 +386,5 @@
     bottom: 0px;
     left: 0;
     text-align: center;
+    pointer-events: none; 
   }

@@ -58,3 +58,41 @@
 .ofirmie h5{
     font-weight: 400;
 }
+.realizacje{
+    background-color: #DCC1AB;
+}
+.realizacje-text h6{
+    color: #1B5B31;
+}
+.realizacje-text{
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.mItem img {
+    width: 100%;
+  }
+  
+  .masonry {
+      column-count: 4;
+      column-gap: 26px;
+  }
+  
+  .masonry .mItem {
+    display: inline-block;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
+  

@@ -7,6 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>  
+        $(document).ready(function(){
+            $("img:lt(18)").show();
+            // When the gallery button is clicked
+            $("#gallery-btn").on('click', function(event) {
+            // Prevent default behavior
+            event.preventDefault();
+            // All of the hidden images
+            var $hidden = $("img:hidden");
+            // Show the next four images
+            $($hidden).slice(0, 12).fadeIn(800);
+            // If the length of $hidden is 0 then hide the button
+            if ($hidden.length == 0) {
+                $("#gallery-btn").hide();
+            }
+            });
+        });
+    </script>  
 </head>
 <body>
     <nav class="navbar border-bottom border-body p-3">
@@ -310,6 +329,14 @@
                 <div class="mItem">
                 <img onclick="openModal();currentSlide(36)" class="hover-shadow" src="https://source.unsplash.com/random/80">
                 </div>
+                <div class="gallery-btn-box">
+                    <button type="button" class="btn btn-lg rounded-pill" id="gallery-btn">
+                        Rozwin
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -473,17 +500,19 @@
                   </div>
             </div>
         </div>
-        <div class="instagram">
-            <div class="row instagram-content">
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-semibold pt-4">
-                        Zostańmy w kontakcie!<br>
-                        Znajdziesz nas na <b>Instagramie.</b>
-                    </h1>
-                </div>
-                <div class="col-lg-6 pt-4 d-flex flex-column justify-content-center align-items-center btn-instagram-content">
-                    <h5 class="pb-3">Śledź nasze najnowsze realizacje!</h5>
-                    <button class="btn btn-light btn-lg rounded-pill" style="color: #1B5B31;">Instagram</button>
+        <div class="d-flex align-items-center" style="height: 600px; background-color: white">
+            <div class="instagram">
+                <div class="row instagram-content">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-semibold pt-4">
+                            Zostańmy w kontakcie!<br>
+                            Znajdziesz nas na <b>Instagramie.</b>
+                        </h1>
+                    </div>
+                    <div class="col-lg-6 pt-4 d-flex flex-column justify-content-center align-items-center btn-instagram-content">
+                        <h5 class="pb-3">Śledź nasze najnowsze realizacje!</h5>
+                        <button class="btn btn-light btn-lg rounded-pill" style="color: #1B5B31;">Instagram</button>
+                    </div>
                 </div>
             </div>
         </div>

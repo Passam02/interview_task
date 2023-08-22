@@ -374,10 +374,9 @@
     color: black;
     border-color: black;
     position: absolute;
-    bottom: 180px;
-    left: 45%;
+    bottom: 120px;
   }
-  .gallery-btn-box {
+  .gallery-box {
     text-align: center;
     background-color: rgba(220, 193, 171, 0.5);
     position: absolute;
@@ -387,4 +386,13 @@
     left: 0;
     text-align: center;
     pointer-events: none; 
+  }
+  .gallery-btn-box{
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
   }

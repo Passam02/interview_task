@@ -11,18 +11,49 @@ body{
     border: #1B5B31 1px solid;
 }
 .btn-slider-next{
+    height: 5%;
+    width: 14%;
+    bottom: 0;
+    top: auto !important;
+}
+@media (min-width: 700px) {
+    .btn-slider-next{
+    height: 8.5%;
+    width: 14%;
+    bottom: 0;
+    top: auto !important;
+}}
+@media (min-width: 992px) {
+    .btn-slider-next{
     height: 13%;
     width: 7%;
     bottom: 0;
     top: auto !important;
-}
+}}
+
 .btn-slider-prev{
+    width: 14%;
+    height: 5%;
+    right: 14%;
+    left: auto;
+    top: auto;
+}
+@media (min-width: 700px) {
+    .btn-slider-prev{
+    width: 14%;
+    height: 8.5%;
+    right: 14%;
+    left: auto;
+    top: auto;
+}}
+@media (min-width: 992px) {
+    .btn-slider-prev{
     width: 7%;
     height: 13%;
     right: 7%;
     left: auto;
     top: auto;
-}
+}}
 .oferta{
     margin-left: 10%;
     padding-top: 8%;
